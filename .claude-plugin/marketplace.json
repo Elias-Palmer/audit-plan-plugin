@@ -1,0 +1,18 @@
+{
+  "name": "audit-plan-marketplace",
+  "version": "1.0.0",
+  "description": "Local marketplace for the audit-plan plugin",
+  "owner": {
+    "name": "Local",
+    "email": "local@localhost"
+  },
+  "plugins": [
+    {
+      "name": "audit-plan",
+      "description": "Automatically audits Claude's plans before exiting plan mode",
+      "version": "1.0.0",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

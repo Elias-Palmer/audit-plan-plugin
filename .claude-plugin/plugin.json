@@ -1,0 +1,5 @@
+{
+  "name": "audit-plan",
+  "version": "1.0.0",
+  "description": "Automatically audits Claude's plans before exiting plan mode"
+}
