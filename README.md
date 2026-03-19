@@ -114,6 +114,7 @@ audit-plan-plugin/
 │   ├── audit-plan.sh      # Primary hook (PreToolUse)
 │   ├── audit-stop.sh      # Fallback hook (Stop)
 │   └── cleanup.sh         # Session cleanup
+├── .gitignore
 ├── LICENSE
 └── README.md
 ```

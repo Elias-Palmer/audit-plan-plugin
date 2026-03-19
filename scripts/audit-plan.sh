@@ -58,7 +58,7 @@ cat <<'RESPONSE'
     "hookEventName": "PreToolUse",
     "permissionDecision": "deny",
     "permissionDecisionReason": "Plan audit required before exit",
-    "additionalContext": "AUTOMATIC PLAN AUDIT — Your ExitPlanMode was denied for a one-time audit.\n\nReview the plan that is ALREADY in your conversation context above. Do NOT re-read plan files from disk.\n\nCheck for:\n- Missing requirements or edge cases\n- Incorrect file paths or function references\n- Logical gaps or ordering issues\n- Simpler alternatives overlooked\n- Missing verification/testing steps\n\nIf you find issues, make targeted edits to the plan file using Edit (change only the specific lines that need fixing — do NOT rewrite the whole file). If the plan looks good, just call ExitPlanMode again with no changes.\n\nThis is your ONE audit pass. Focus on real issues, not cosmetic changes."
+    "additionalContext": "Plan Audit — ExitPlanMode paused for a one-time quality review.\n\nReview the plan that is ALREADY in your conversation context above. Do NOT re-read plan files from disk.\n\nCheck for:\n- Missing requirements or edge cases\n- Incorrect file paths or function references\n- Logical gaps or ordering issues\n- Simpler alternatives overlooked\n- Missing verification or testing steps\n- Assumptions that should be verified (e.g., assumed file locations, API behavior, library capabilities, or data formats — flag anything that was assumed rather than confirmed)\n\nIf you find issues, make targeted edits to the plan file using Edit (change only the specific lines that need fixing — do NOT rewrite the whole file). If the plan looks good, just call ExitPlanMode again with no changes.\n\nThis is your ONE audit pass. Focus on real issues, not cosmetic changes."
   }
 }
 RESPONSE
